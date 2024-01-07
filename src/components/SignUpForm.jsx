@@ -31,13 +31,15 @@ export default function SignUpForm({token, setToken}){
             <h2>Sign Up</h2>
             {formError && <p>{formError}</p>}
             <form onSubmit= {handleSubmit}>
-                <label>
-                    Username: <input type= 'username' value= {username} onChange= {(e) => setUsername(e.target.value)}/>
-                 </label>
-                <label>
-                    Password: <input type= 'password' value= {password} onChange= {(e) => setPassword(e.target.value)}/>
-                </label>
-                <button>Submit</button>
+                <div id='entries'>
+                    <label>
+                        Username: <input type= 'username' value= {username} onChange= {(e) => setUsername(e.target.value)}/>
+                    </label>
+                    <label>
+                        Password: <input type= 'password' value= {password} onChange= {(e) => setPassword(e.target.value)}/>
+                    </label>
+                </div>
+                <button id='submit'>Submit</button>
             </form>
         </>
     )

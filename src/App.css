@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+label{
+  padding: 5%;
+}
+
+#entries{
+  display: flex;
+  padding-top: 0%;
+}
+
+form{
+  padding-top: 0%;
+}
+
+label{
+  padding-top: 0%;
+}

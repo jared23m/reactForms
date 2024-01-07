@@ -26,7 +26,7 @@ export default function Authenticate({token, setToken}){
     return (
         <>
             <h2>Authenticate</h2>
-            {(successMessage === "jwt malformed") && <p>Error: {successMessage}</p>}
+            {(successMessage === "jwt malformed") && <p>Error: {successMessage}. Please submit first.</p>}
             {(successMessage === "Correctly Authenticated!") && <p>{successMessage}</p>}
             {(successMessage === "Correctly Authenticated!") && <p>Data IAT: {dataIAT}</p>}
             <button onClick= {handleClick}>Authenticate Token</button>
